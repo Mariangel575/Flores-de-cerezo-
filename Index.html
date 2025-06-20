@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Estilo.CSS">
+    <title>Sakura - Cerezos Japoneses</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Sakura</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li> 
+                <li><a href="Enlaces/IndexFlor.html">La Flor</a></li>
+                <li><a href="Enlaces/Hamani.html">Hanami</a></li>
+                <li><a href="Enlaces/Variedades.html">Variedades</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+       <style>
+    .blink:hover
+   
+    {
+    animation: blink-animation 0.4s infinite;
+    }
+        @keyframes blink-animation 
+        {
+            0% 
+            {
+                opacity: 1;
+            }
+            50% 
+            {
+                opacity: 0;
+            }
+            100% 
+            {
+                opacity: 1;
+            }
+    }
+
+    </style>
+
+    <header id="inicio">
+        <img src="Imagenes/Cerezo3.jpg" alt="Cerezos en flor">
+        <div class="header-content">
+           <h1> <span class="blink">La Belleza Efímera del Sakura</span></h1>
+             <p>Descubre la magia de los cerezos en flor y la profunda cultura que los rodea</p>
+        </div>
+    </header>
+    
+    <div class="container main-content">
+        <div class="sakura-cards">
+            <div class="sakura-card">
+                <h2>La Flor del Cerezo</h2> 
+                <p>El sakura (桜) o flor del cerezo japonés es uno de los símbolos más reconocibles de Japón. Estas delicadas flores rosadas aparecen cada primavera, transformando el paisaje en un mar de suaves tonos pastel.</p>
+                <p>La floración dura apenas una o dos semanas, simbolizando la fugacidad y belleza de la vida en la filosofía japonesa.</p>
+            </div>
+            
+            <div class="sakura-card">
+                <h2>Hanami: La Tradición</h2>
+                <p>Hanami (花見) significa literalmente "ver flores" y es la tradición centenaria de observar y celebrar la belleza de los cerezos en flor.</p>
+                <p>Familiares y amigos se reúnen bajo los árboles para hacer picnics, cantar y disfrutar de la efímera belleza de las flores.</p>
+            </div>
+            
+            <div class="sakura-card">
+                <h2>Variedades de Sakura</h2>
+                <p>Existen más de 200 variedades de cerezos en Japón, cada una con características únicas:</p>
+                <ul>
+                    <li><strong>Somei Yoshino:</strong> La variedad más común, con flores blancas y rosadas.</li>
+                    <li><strong>Shidarezakura:</strong> Cerezo llorón, con ramas que caen en cascada.</li>
+                    <li><strong>Yaezakura:</strong> Con flores dobles y mayor duración.</li>
+                    <li><strong>Kawazuzakura:</strong> Florece antes que las demás, anunciando la primavera.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <img src="Imagenes/Cerezo2.jpg" alt="Flor de cerezo" class="footer-logo">
+                    <p>La belleza efímera de las flores de cerezo nos recuerda apreciar cada momento.</p>
+                    <div class="social-links">
+                        <a href="https://es-la.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone-alt"></i> (504) 342 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@cerezojapones.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Tokio, Japón</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Correo electrónico</h3>
+                    <p>Suscríbete para ver mas de nuestras actualizaciones</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <p>© 2025 Sakura - La belleza de los cerezos japoneses. </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

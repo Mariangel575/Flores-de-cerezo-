@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #fce4ec;
+    padding: 15px 0;
+    border-bottom: 2px solid #f3e8ec;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #d81b60;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to right, #eeeaeb,);
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #880e4f;
+   
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    color: #ad1457;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.video-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.audio-wrapper {
+    margin-top: 20px;
+}
+
+.gallery-section {
+    text-align: center;
+}
+
+.gallery-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #6a1b9a;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    color: #880e4f;
+}
+footer {
+    background-color: #f8bbd0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    color: #880e4f;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fce4ec;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .full-width {
+        grid-column: span 1 !important;
+    }
+}
